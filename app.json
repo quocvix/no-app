@@ -21,7 +21,8 @@
       "package": "com.no.expensetracker",
       "permissions": [
         "android.permission.CAMERA",
-        "android.permission.VIBRATE"
+        "android.permission.VIBRATE",
+        "android.permission.RECORD_AUDIO"
       ],
       "softwareKeyboardLayoutMode": "resize"
     },
@@ -118,6 +119,11 @@
         }
       ],
       "expo-splash-screen"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "36468fa9-2539-4f81-adfa-20ac6bb1e6dc"
+      }
+    }
   }
 }
