@@ -1,0 +1,123 @@
+{
+  "expo": {
+    "name": "Иợ",
+    "slug": "no",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.no.expensetracker",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.VIBRATE"
+      ],
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.no.expensetracker",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "mbmobile",
+          "mbbank",
+          "vcb",
+          "vcbdigibank",
+          "tcb",
+          "bidvsmartbanking",
+          "vpbank",
+          "vpbankneo",
+          "tpbank",
+          "tpbankmobile",
+          "acbone",
+          "momo"
+        ]
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Cho phép ứng dụng sử dụng Camera để quét mã VietQR thanh toán."
+        }
+      ],
+      "expo-sqlite",
+      "expo-sharing",
+      "expo-status-bar",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "extraManifestAttributes": {
+              "queries": {
+                "package": [
+                  {
+                    "$": {
+                      "android:name": "com.mbmobile"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "com.VCB"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "tcbbank.com.vn"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "vn.com.techcombank.bb.app"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "com.vnpay.bidv"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "com.vnpay.vpbankonline"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "com.tpb.mb.gprsandroid"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "mobile.acb.com.vn"
+                    }
+                  },
+                  {
+                    "$": {
+                      "android:name": "com.mservice.momotransfer"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "expo-splash-screen"
+    ]
+  }
+}
